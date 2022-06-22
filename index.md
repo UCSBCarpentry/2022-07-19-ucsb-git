@@ -110,7 +110,7 @@ Explain who your audience is.  (In particular, tell readers if the
 workshop is only open to people from a particular institution.
 {% endcomment %}
 {% if site.carpentry == "swc" %}
-Workshops are open to all staff, faculty, students, and other researchers in the Santa Barbara Area- including UCSB, Westmont, and SB Community College. <strong>Prior experience with using the bash-shell is recommended.</strong> If you have no experience, consider registering for the <a href= "https://ucsbcarpentry.github.io/2022-07-12-ucsb-bash/">Intro to Bash workshop</a> if you would like to fulfill the prerequsites for this workshop.
+{% include swc/who.html %}
 {% elsif site.carpentry == "dc" %}
 {% include dc/who.html %}
 {% elsif site.carpentry == "lc" %}
