@@ -110,3 +110,5 @@ Taking a closer look at one of these commits, we can see what exactly has been e
 > >     problems.
 > {: .solution}
 {: .challenge}
+
+{% include links.md %}
