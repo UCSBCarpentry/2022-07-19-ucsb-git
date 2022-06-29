@@ -118,7 +118,5 @@ jobs:
           # return
           cd ..
 
-      # waiting for https://github.com/carpentries/styles/issues/551
-      # to be addressed
-      # - run: make lesson-check-all
-      #   if: always()
+      - run: make lesson-check-all
+        if: always()

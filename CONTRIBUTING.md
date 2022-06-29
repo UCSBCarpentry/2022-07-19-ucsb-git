@@ -15,7 +15,7 @@ In exchange,
 we will address your issues and/or assess your change proposal as promptly as we can,
 and help you become a member of our community.
 Everyone involved in [Software Carpentry][swc-site] and [Data Carpentry][dc-site]
-agrees to abide by our [code of conduct](CONDUCT.md).
+agrees to abide by our [code of conduct](https://docs.carpentries.org/topic_folders/policies/code-of-conduct.html).
 
 ## How to Contribute
 
@@ -34,7 +34,7 @@ and to meet some of our community members.
 2.  If you have a [GitHub][github] account,
     or are willing to [create one][github-join],
     but do not know how to use Git,
-    you can report problems or suggest improvements by [creating an issue][issues].
+    you can report problems or suggest improvements by [creating an issue][new-issue].
     This allows us to assign the item to someone
     and to respond to it in a threaded discussion.
 
@@ -45,22 +45,31 @@ and to meet some of our community members.
 
 ## Where to Contribute
 
-1.  If you wish to change the template used for workshop websites,
-    please work in <https://github.com/swcarpentry/workshop-template>.
+1.  If you wish to change this lesson,
+    please work in <https://github.com/swcarpentry/git-novice>,
+    which can be viewed at <https://swcarpentry.github.io/git-novice>.
+
+2.  If you wish to change the example lesson,
+    please work in <https://github.com/carpentries/lesson-example>,
+    which documents the format of our lessons
+    and can be viewed at <https://carpentries.github.io/lesson-example>.
+
+3.  If you wish to change the template used for workshop websites,
+    please work in <https://github.com/carpentries/workshop-template>.
     The home page of that repository explains how to set up workshop websites,
-    while the extra pages in <https://swcarpentry.github.io/workshop-template>
+    while the extra pages in <https://carpentries.github.io/workshop-template>
     provide more background on our design choices.
 
-2.  If you wish to change CSS style files, tools,
+4.  If you wish to change CSS style files, tools,
     or HTML boilerplate for lessons or workshops stored in `_includes` or `_layouts`,
-    please work in <https://github.com/swcarpentry/styles>.
+    please work in <https://github.com/carpentries/styles>.
 
 ## What to Contribute
 
 There are many ways to contribute,
 from writing new exercises and improving existing ones
 to updating or filling in the documentation
-and submitting [bug reports][issues]
+and submitting [bug reports][new-issue]
 about things that don't work, aren't clear, or are missing.
 If you are looking for ideas,
 please see [the list of issues for this repository][issues],
@@ -86,7 +95,7 @@ The first encourages contributors to be honest about requirements;
 the second, to think hard about priorities.
 
 We are also not looking for exercises or other material that only run on one platform.
-Our workshops typically contain a mixture of Windows, macOS, and Linux users;
+Our workshops typically contain a mixture of Windows, Mac OS X, and Linux users;
 in order to be usable,
 our lessons must run equally well on all three.
 
@@ -126,17 +135,18 @@ happens on the [discussion mailing list][discuss-list],
 which everyone is welcome to join.
 You can also [reach us by email][contact].
 
-[contact]: mailto:admin@software-carpentry.org
+[contact]: mailto:team@carpentries.org
 [dc-issues]: https://github.com/issues?q=user%3Adatacarpentry
 [dc-lessons]: http://datacarpentry.org/lessons/
 [dc-site]: http://datacarpentry.org/
-[discuss-list]: http://lists.software-carpentry.org/listinfo/discuss
-[github]: http://github.com
+[discuss-list]: https://carpentries.topicbox.com/groups/discuss
+[github]: https://github.com
 [github-flow]: https://guides.github.com/introduction/flow/
 [github-join]: https://github.com/join
 [how-contribute]: https://egghead.io/series/how-to-contribute-to-an-open-source-project-on-github
-[issues]: https://github.com/swcarpentry/workshop-template/issues/
-[repo]: https://github.com/swcarpentry/workshop-template/
+[new-issue]: https://github.com/swcarpentry/git-novice/issues/new
+[issues]: https://github.com/swcarpentry/git-novice/issues/
+[repo]: https://github.com/swcarpentry/git-novice/
 [swc-issues]: https://github.com/issues?q=user%3Aswcarpentry
-[swc-lessons]: http://software-carpentry.org/lessons/
-[swc-site]: http://software-carpentry.org/
+[swc-lessons]: https://software-carpentry.org/lessons/
+[swc-site]: https://software-carpentry.org/
