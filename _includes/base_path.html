@@ -22,7 +22,7 @@ The logic there follows the (adapted) instructions found at:
       forward slashes ('/') and subtracting 1
     - when the URL ends with a forward slash (e.g. /foo/bar/),
       we can get the depth of the page by counting the number of /
-{%- endcomment -%}
+
 
 {% if site.url %}
   {% assign relative_root_path = site.baseurl %}
@@ -38,4 +38,22 @@ The logic there follows the (adapted) instructions found at:
   {% elsif depth == 2 %}{% assign relative_root_path = '..' %}
   {% else %}{% capture relative_root_path %}..{% for i in (3..depth) %}/..{% endfor %}{% endcapture %}
   {% endif %}
+{% endif %}
+{%- endcomment -%}
+
+{% assign relative_root_path = '' %}
+
+{% assign last_char = page.url | slice: -1 %}
+
+{% if last_char == "/"}
+{% assign offset = 0 %}
+{% else %}
+{% assign offset = 1 %}
+{% endif %}
+
+{% assign depth = page.url | split: '/' | size | minus: offset %}
+{% if    depth <= 1 %}{% assign relative_root_path = '.' %}
+{% elsif depth == 2 %}{% assign relative_root_path = '..' %}
+{% elsif depth == 3 %}{% assign relative_root_path = '../..' %}
+{% elsif depth == 4 %}{% assign relative_root_path = '../../..' %}
 {% endif %}
