@@ -21,12 +21,12 @@ automated version control is much better than this situation:
 
 "Piled Higher and Deeper" by Jorge Cham, http://www.phdcomics.com
 
-We've all been in this situation before: it seems ridiculous to have
+We've all been in this situation before: it seems unnecessary to have
 multiple nearly-identical versions of the same document. Some word
 processors let us deal with this a little better, such as Microsoft
-Word's
-[Track Changes](https://support.office.com/en-us/article/Track-changes-in-Word-197ba630-0f5f-4a8e-9a77-3712475e806a),
-Google Docs' [version history](https://support.google.com/docs/answer/190843?hl=en), or
+Word's 
+[Track Changes](https://support.office.com/en-us/article/Track-changes-in-Word-197ba630-0f5f-4a8e-9a77-3712475e806a), 
+Google Docs' [version history](https://support.google.com/docs/answer/190843?hl=en), or 
 LibreOffice's [Recording and Displaying Changes](https://help.libreoffice.org/Common/Recording_and_Displaying_Changes).
 
 Version control systems start with a base version of the document and
@@ -40,11 +40,11 @@ more recent version.
 Once you think of changes as separate from the document itself, you
 can then think about "playing back" different sets of changes on the base document, ultimately
 resulting in different versions of that document. For example, two users can make independent
-sets of changes on the same document.
+sets of changes on the same document. 
 
 ![Different Versions Can be Saved](../fig/versions.svg)
 
-Unless multiple users make changes to the same section of the document - a conflict - you can
+Unless multiple users make changes to the same section of the document - a conflict - you can 
 incorporate two sets of changes into the same base document.
 
 ![Multiple Versions Can be Merged](../fig/merge.svg)
@@ -58,36 +58,28 @@ metadata make up a [repository]({{ page.root }}{% link reference.md %}#repositor
 Repositories can be kept in sync across different computers, facilitating
 collaboration among different people.
 
-To build this workshop's website, we often have multiple people working on the site independantly. Here is a snapshot of the history of changes, or commits, which we have implemented on this website. You will notice multiple people are involved, and they each include a comment on what changes are being made.
-
-![A History of commits](../fig/commit_history.png)
-
-Taking a closer look at one of these commits, we can see what exactly has been edited. The line of content which has been changed is marked in red, and the new line of content is marked in green.
-
-![A History of commits](../fig/commit_ex.png)
-
 > ## The Long History of Version Control Systems
 >
 > Automated version control systems are nothing new.
-> Tools like RCS, CVS, or Subversion have been around since the early 1980s and are used by
+> Tools like [RCS](https://en.wikipedia.org/wiki/Revision_Control_System), [CVS](https://en.wikipedia.org/wiki/Concurrent_Versions_System), or [Subversion](https://en.wikipedia.org/wiki/Apache_Subversion) have been around since the early 1980s and are used by 
 > many large companies.
-> However, many of these are now considered legacy systems (i.e., outdated) due to various
+> However, many of these are now considered legacy systems (i.e., outdated) due to various 
 > limitations in their capabilities.
 > More modern systems, such as Git and [Mercurial](https://swcarpentry.github.io/hg-novice/),
 > are *distributed*, meaning that they do not need a centralized server to host the repository.
-> These modern systems also include powerful merging tools that make it possible for
+> These modern systems also include powerful merging tools that make it possible for 
 > multiple authors to work on
 > the same files concurrently.
 {: .callout}
 
 > ## Paper Writing
 >
-> *   Imagine you drafted an excellent paragraph for a paper you are writing, but later ruin
+> *   Imagine you drafted an excellent paragraph for a paper you are writing, but later ruin 
 >     it. How would you retrieve the *excellent* version of your conclusion? Is it even possible?
 >
-> *   Imagine you have 5 co-authors. How would you manage the changes and comments
->     they make to your paper?  If you use LibreOffice Writer or Microsoft Word, what happens if
->     you accept changes made using the `Track Changes` option? Do you have a
+> *   Imagine you have 5 co-authors. How would you manage the changes and comments 
+>     they make to your paper?  If you use LibreOffice Writer or Microsoft Word, what happens if 
+>     you accept changes made using the `Track Changes` option? Do you have a 
 >     history of those changes?
 >
 > > ## Solution
@@ -110,5 +102,3 @@ Taking a closer look at one of these commits, we can see what exactly has been e
 > >     problems.
 > {: .solution}
 {: .challenge}
-
-{% include links.md %}

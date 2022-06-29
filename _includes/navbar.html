@@ -32,13 +32,6 @@
       <a href="{{ site.carpentries_site }}" class="pull-left">
         <img class="navbar-logo" src="{{ relative_root_path }}{% link /assets/img/cp-logo-blue.svg %}" alt="The Carpentries logo" />
       </a>
-      {% elsif site.carpentry == "incubator" %}
-      <a href="{{ site.incubator_lesson_site }}" class="pull-left">
-        <img class="navbar-logo" src="{{ relative_root_path }}{% link /assets/img/incubator-logo-blue.svg %}" alt="The Carpentries Incubator logo" />
-      {% elsif site.carpentry == "lab" %}
-      <a href="{{ relative_root_path }}{% link index.md %}" class="pull-left">
-        <img class="navbar-logo" src="{{ relative_root_path }}{% link /assets/img/carpentrieslab.svg %}" alt="The Carpentries Lab" />
-      </a>
       {% endif %}
 
       {% comment %} Always show link to home page. {% endcomment %}
@@ -87,9 +80,7 @@
             {% else %}
               {% assign extra = lesson_extra %}
             {% endif %}
-            {% unless extra.exclude %}
-              <li><a href="{{ relative_root_path }}{{ extra.url }}">{{ extra.title }}</a></li>
-            {% endunless %}
+            <li><a href="{{ relative_root_path }}{{ extra.url }}">{{ extra.title }}</a></li>
             {% endfor %}
           </ul>
         </li>
@@ -107,7 +98,7 @@
       </ul>
       <form class="navbar-form navbar-right" role="search" id="search" onsubmit="google_search(); return false;">
         <div class="form-group">
-          <input type="text" title="Google search" id="google-search" placeholder="Search..." aria-label="Google site search">
+          <input type="text" id="google-search" placeholder="Search..." aria-label="Google site search">
         </div>
       </form>
     </div>
