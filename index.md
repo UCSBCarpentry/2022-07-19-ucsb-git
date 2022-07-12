@@ -429,6 +429,7 @@ please preview your site before committing, and make sure to run
 > If your **device** is logged into any drives, you need to log out before starting the setup instructions (e.g. OneDrive, DropBox, etc.)
 >
 > - The Bash Shell
+> - Git
 > - <a href= "https://github.com/">GitHub Account</a>
 > - Up-to-date browser
 > - Zoom video conferencing app (if attending remotely)
