@@ -425,6 +425,15 @@ please preview your site before committing, and make sure to run
   <a href = "{{site.swc_github}}/workshop-template/wiki/Configuration-Problems-and-Solutions">Configuration Problems and Solutions wiki page</a>.
 </p>
 
+> ## Setup Checklist
+> If your **device** is logged into any drives, you need to log out before starting the setup instructions (e.g. OneDrive, DropBox, etc.)
+>
+> - The Bash Shell
+> - <a href= "https://github.com/">GitHub Account</a>
+> - Up-to-date browser
+> - Zoom video conferencing app (if attending remotely)
+{: .checklist}
+
 {% comment %}
 For online workshops, the section below provides:
 - installation instructions for the Zoom client
