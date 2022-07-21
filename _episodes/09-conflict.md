@@ -331,6 +331,15 @@ Conflicts can also be minimized with project management strategies:
   project convention that is governing and use code style tools (e.g.
   `htmltidy`, `perltidy`, `rubocop`, etc.) to enforce, if necessary
 
+> ## Advanced Git 
+> 
+> Use `git pull --rebase` instead of `git pull`. 
+> If the remote has diverged from local and automerge doesn't work, git rebase will ask you to resolve the conflict (same as git pull); you then `git add` the files with resolved conflict and `git rebase --continue` (instead of `git commit`). 
+> The end result is that your local changes are applied after the commits retrieved from the remote. 
+> A tidy sequence of commits, without a merge commit. After `git rebase --continue` , you push back to the remote.
+> {: .source}
+{: .callout}
+
 > ## Solving Conflicts that You Create
 >
 > Clone the repository created by your instructor.
